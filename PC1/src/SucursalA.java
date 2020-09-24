@@ -54,23 +54,11 @@ public void ejecutar() {
 		hila2=new CajeroB(Name,Direccion,Tipo_cliente);
 		hila3=new CajeroC(Name,Direccion,Tipo_cliente);
 		hila1.start();
-		try {
-			Thread.sleep(10000);
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+		
 		hila2.start();
-		try {
-			Thread.sleep(10000);
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+		
 		hila3.start();
-		try {
-			Thread.sleep(10000);
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+		
 	}
 	
 }

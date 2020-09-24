@@ -29,7 +29,13 @@ public class CajeroB extends Thread{
 		
 		  if(Tipo_Cajero=="Preferencial")
 		  {
-			  System.out.println(Nombre+" "+Direccion+" "+Tipo_Cajero+"\t");
+			  
+			  try {
+				  System.out.println(Nombre+" "+Direccion+" "+Tipo_Cajero+"\t");
+					sleep(10000);
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
 		  }
 		  
 	}

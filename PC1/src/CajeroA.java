@@ -34,8 +34,15 @@ public class CajeroA extends Thread{
 		
 	  if(Tipo_Cajero=="Banca Esclusiva")
 	  {
-		  System.out.println(Nombre+" "+Direccion+" "+Tipo_Cajero+"\t");
+		  
+		  try {
+			  System.out.println(Nombre+" "+Direccion+" "+Tipo_Cajero+"\t");
+				sleep(10000);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
 	  }
+	  
 	}
 	
 }
